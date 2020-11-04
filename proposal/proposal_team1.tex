@@ -1,0 +1,37 @@
+\documentclass{article}
+
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{hyperref}
+
+\geometry{letterpaper, total={7in, 10in} }
+
+\title{CSCI 3360 Data Science I Course Project Proposal\\
+		Project Team I}
+
+\author{Ayush Kumar, Chloe Phelps, Jason Furdui, Annie Lim}
+
+\date{November 06, 2020}
+
+\begin{document}
+	
+	\maketitle
+	
+	The dataset we are choosing to work with is a collection of nearly 20,000 chess games played on the chess website known as \href{https://lichess.org}{lichess} (kaggle link: \url{https://www.kaggle.com/datasnaek/chess}). This dataset includes many features from different games including the ratings of the various players, the opening played, how long the game lasted, whether or not the game was rated, and the time control played. It also includes the standard algebraic notation for all the moves that were played in the game. 
+	
+	Our standard analysis will include plotting the winning percentage given the rating difference, based on the opening played, and time control. We can also create various columns of data from the game PGN strings analyzing if a player wins a queen, trades their queen, or loses material in the opening. The overall data analysis tends towards this being a classification task, with the response variable being predicting the winner of the game. 
+	
+	We propose the following models for classifying the outcome of the games: 
+	
+	\begin{enumerate}
+		\item A Decision Tree Model 
+		\item Logistic Regression 
+		\item KNN based on Dataset with Reduced Dimensions 
+		\item Naive Bayes Classifier 
+	\end{enumerate}
+	
+	The evaluation metrics for each of the methods will include accuracy, precision, recall, and f1-score. The initial analysis and feature engineering will be done by all members of team in collaboration over zoom. Then each individual member of the team will implement and evaluate one of the models. After models are implemented and evaluated the group will reconvene to aggregate the results and generate the final report and presentation. 
+\end{document}
